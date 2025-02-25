@@ -1,6 +1,7 @@
 #include "stocks.h"
 #include <fstream>
 #include <sstream>
+#include <map>
 
 void parse(string line, int &stockID, string &stockSymbol, string &stockName, float &stockPrice, float &stockMarketCap, string &stockSector);
 
@@ -84,18 +85,36 @@ int findStocksByName(vector<Stocks> &stocks, string stockName)
     return -1;
 }
 
+// stage 3 q3
+map<string, int> findCountBySector(vector<Stocks> &stocks)
+{
+    map<string, int> sectorCount;
+    for (Stocks &stock : stocks)
+    {
+        sectorCount[stock.stockSector]++;
+    }
+    return sectorCount;
+}
+
 void stocks()
 {
     vector<Stocks> stocks;
     populateStocks(stocks);
     // displayStocks(stocks);
-    int result = findStocksByName(stocks, "Apple Inc.");
-    if (result != -1)
+    // int result = findStocksByName(stocks, "Apple Inc.");
+    // if (result != -1)
+    // {
+    //     cout << "Stock ID: " << result << endl;
+    // }
+    // else
+    // {
+    //     cout << "Stock not found" << endl;
+    // }
+    map<string, int> sectorCount = findCountBySector(stocks);
+    cout << "Stock sector count:" << endl;
+    // auto is used to automatically determine the type of the variable
+    for (auto &sector : sectorCount)
     {
-        cout << "Stock ID: " << result << endl;
-    }
-    else
-    {
-        cout << "Stock not found" << endl;
+        cout << sector.first << ": " << sector.second << endl;
     }
 }
