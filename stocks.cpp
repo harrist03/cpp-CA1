@@ -56,23 +56,46 @@ void parse(string line, int &stockID, string &stockSymbol, string &stockName, fl
     getline(ss, stockSector);
 }
 
-void displayStocks(Stocks &stock)
+// stage 3 q1
+void displayStocks(vector<Stocks> &stocks)
 {
-    cout << "Stock ID: " << stock.stockID << endl;
-    cout << "Stock Symbol: " << stock.stockSymbol << endl;
-    cout << "Stock Name: " << stock.stockName << endl;
-    cout << "Stock Price: $" << stock.stockPrice << endl;
-    cout << "Stock Market Cap: $" << stock.stockMarketCap << endl;
-    cout << "Stock Sector: " << stock.stockSector << endl;
-    cout << endl;
+    for (Stocks &stock : stocks)
+    {
+        cout << "Stock ID: " << stock.stockID << endl;
+        cout << "Stock Symbol: " << stock.stockSymbol << endl;
+        cout << "Stock Name: " << stock.stockName << endl;
+        cout << "Stock Price: $" << stock.stockPrice << endl;
+        cout << "Stock Market Cap: $" << stock.stockMarketCap << endl;
+        cout << "Stock Sector: " << stock.stockSector << endl;
+        cout << endl;
+    }
+}
+
+// stage 3 q2
+int findStocksByName(vector<Stocks> &stocks, string stockName)
+{
+    for (Stocks &stock : stocks)
+    {
+        if (stock.stockName.compare(stockName))
+        {
+            return stock.stockID;
+        }
+    }
+    return -1;
 }
 
 void stocks()
 {
     vector<Stocks> stocks;
     populateStocks(stocks);
-    for (Stocks &stock : stocks)
+    // displayStocks(stocks);
+    int result = findStocksByName(stocks, "Apple Inc.");
+    if (result != -1)
     {
-        displayStocks(stock);
+        cout << "Stock ID: " << result << endl;
+    }
+    else
+    {
+        cout << "Stock not found" << endl;
     }
 }
