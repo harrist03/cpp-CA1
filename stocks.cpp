@@ -2,10 +2,9 @@
 #include <fstream>
 #include <sstream>
 #include <map>
+#include <iomanip>
 
-void parse(string line, int &stockID, string &stockSymbol, string &stockName, float &stockPrice, float &stockMarketCap, string &stockSector);
-
-void populateStocks(vector<Stocks> &stocks)
+void populateStocks(vector<Stocks> &stocksList)
 {
     ifstream fin("stocks_data.csv");
 
@@ -24,7 +23,7 @@ void populateStocks(vector<Stocks> &stocks)
             getline(fin, line);
             parse(line, stockID, stockSymbol, stockName, stockPrice, stockMarketCap, stockSector);
             Stocks stock = {stockID, stockSymbol, stockName, stockPrice, stockMarketCap, stockSector};
-            stocks.push_back(stock);
+            stocksList.push_back(stock);
         }
     }
     else
@@ -38,7 +37,6 @@ void parse(string line, int &stockID, string &stockSymbol, string &stockName, fl
     string temp;
     // stringstream object to parse the csv file
     stringstream ss(line);
-
     // parse stockID
     getline(ss, temp, ',');
     stockID = stoi(temp);
@@ -57,27 +55,61 @@ void parse(string line, int &stockID, string &stockSymbol, string &stockName, fl
     getline(ss, stockSector);
 }
 
-// stage 3 q1
-void displayStocks(vector<Stocks> &stocks)
+// Display header for the table
+void displayHeader()
 {
-    for (Stocks &stock : stocks)
+    cout << string(113, '-') << endl;
+    cout << left
+         << setw(5) << "ID"
+         << setw(40) << "Name"
+         << setw(8) << "Symbol"
+         << right
+         << setw(12) << "Price"
+         << setw(20) << "Market Cap ($B)"
+         << setw(11) << "  Sector" << endl;
+    cout << string(113, '-') << endl;
+}
+
+// Display a single stock in a formatted way
+void displayStock(Stocks &stock)
+{
+    // convert market cap to billions for readability
+    double marketCapBillions = stock.stockMarketCap / 1000000000.0;
+
+    // Format price and market cap as strings with $ symbol
+    stringstream priceStr, marketCapStr;
+    // combine "$ + price" to string
+    priceStr << "$" << fixed << setprecision(2) << stock.stockPrice;
+    marketCapStr << "$" << fixed << setprecision(0) << marketCapBillions << "B";
+
+    cout << left
+         << setw(5) << stock.stockID
+         << setw(40) << stock.stockName
+         << setw(8) << stock.stockSymbol
+         << right
+         << setw(13) << priceStr.str()
+         << setw(13) << marketCapStr.str()
+         << setw(11) << "  " << stock.stockSector
+         << endl;
+}
+
+// stage 3 q1
+void displayStocks(vector<Stocks> &stocksList)
+{
+    displayHeader();
+    for (Stocks &stock : stocksList)
     {
-        cout << "Stock ID: " << stock.stockID << endl;
-        cout << "Stock Symbol: " << stock.stockSymbol << endl;
-        cout << "Stock Name: " << stock.stockName << endl;
-        cout << "Stock Price: $" << stock.stockPrice << endl;
-        cout << "Stock Market Cap: $" << stock.stockMarketCap << endl;
-        cout << "Stock Sector: " << stock.stockSector << endl;
-        cout << endl;
+        displayStock(stock);
     }
+    cout << string(113, '-') << endl;
 }
 
 // stage 3 q2
-int findStocksByName(vector<Stocks> &stocks, string stockName)
+int findStocksByName(vector<Stocks> &stocksList, string stockName)
 {
-    for (Stocks &stock : stocks)
+    for (Stocks &stock : stocksList)
     {
-        if (stock.stockName.compare(stockName))
+        if (stock.stockName == stockName)
         {
             return stock.stockID;
         }
@@ -86,21 +118,46 @@ int findStocksByName(vector<Stocks> &stocks, string stockName)
 }
 
 // stage 3 q3
-map<string, int> findCountBySector(vector<Stocks> &stocks)
+map<string, int> findCountBySector(vector<Stocks> &stocksList)
 {
     map<string, int> sectorCount;
-    for (Stocks &stock : stocks)
+    for (Stocks &stock : stocksList)
     {
         sectorCount[stock.stockSector]++;
     }
     return sectorCount;
 }
 
+// stage 3 q4
+void displayBasedOnUserChoice(vector<Stocks> &stocksList, string choice)
+{
+    bool found = false;
+    displayHeader();
+    for (Stocks &stock : stocksList)
+    {
+        if (stock.stockSector == choice)
+        {
+            displayStock(stock);
+            found = true;
+        }
+    }
+    if (!found)
+    {
+        cout << "No stocks found in the " << choice << " sector." << endl;
+    }
+    else
+    {
+        cout << string(113, '-') << endl;
+    }
+}
+
 void stocks()
 {
-    vector<Stocks> stocks;
-    populateStocks(stocks);
-    // displayStocks(stocks);
+    vector<Stocks> stocksList;
+    populateStocks(stocksList);
+    // // stage 3 q1
+    // displayStocks(stocksList);
+    // // stage 3 q2
     // int result = findStocksByName(stocks, "Apple Inc.");
     // if (result != -1)
     // {
@@ -110,11 +167,17 @@ void stocks()
     // {
     //     cout << "Stock not found" << endl;
     // }
-    map<string, int> sectorCount = findCountBySector(stocks);
-    cout << "Stock sector count:" << endl;
-    // auto is used to automatically determine the type of the variable
-    for (auto &sector : sectorCount)
-    {
-        cout << sector.first << ": " << sector.second << endl;
-    }
+    // // stage 3 q3
+    // map<string, int> sectorCount = findCountBySector(stocksList);
+    // cout << "Stock sector count:" << endl;
+    // // auto is used to automatically determine the type of the variable
+    // for (auto &sector : sectorCount)
+    // {
+    //     cout << sector.first << ": " << sector.second << endl;
+    // }
+    // stage 3 q4
+    string sectorChoice;
+    cout << "Enter stock sector to display (Must have a capital letter at the begining!): " << endl;
+    getline(cin, sectorChoice);
+    displayBasedOnUserChoice(stocksList, sectorChoice);
 }
