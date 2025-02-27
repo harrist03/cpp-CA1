@@ -1,200 +1,200 @@
-1,Apple Inc.,AAPL,187.54,2850000000000,Technology
-2,Microsoft Corporation,MSFT,426.98,3200000000000,Technology
-3,Alphabet Inc.,GOOGL,176.42,2200000000000,Technology
-4,Amazon.com Inc.,AMZN,183.72,1900000000000,Technology
-5,Meta Platforms Inc.,META,494.16,1250000000000,Technology
-6,NVIDIA Corporation,NVDA,943.55,2325000000000,Technology
-7,Tesla Inc.,TSLA,183.75,585000000000,Technology
-8,Johnson & Johnson,JNJ,148.62,358000000000,Health Care
-9,UnitedHealth Group Inc.,UNH,484.36,445000000000,Health Care
-10,Procter & Gamble Co.,PG,162.87,385000000000,Consumer Staples
-11,JPMorgan Chase & Co.,JPM,194.45,562000000000,Financials
-12,Visa Inc.,V,274.68,585000000000,Financials
-13,Walmart Inc.,WMT,65.24,526000000000,Consumer Staples
-14,Mastercard Inc.,MA,457.32,425000000000,Financials
-15,Exxon Mobil Corporation,XOM,114.56,452000000000,Energy
-16,Home Depot Inc.,HD,345.87,342000000000,Consumer Discretionary
-17,Bank of America Corp.,BAC,38.74,302000000000,Financials
-18,Chevron Corporation,CVX,152.34,282000000000,Energy
-19,Coca-Cola Company,KO,61.43,265000000000,Consumer Staples
-20,Pfizer Inc.,PFE,28.14,158000000000,Health Care
-21,Merck & Co. Inc.,MRK,129.42,327000000000,Health Care
-22,PepsiCo Inc.,PEP,172.41,236000000000,Consumer Staples
-23,Abbott Laboratories,ABT,109.78,190000000000,Health Care
-24,Verizon Communications Inc.,VZ,40.68,171000000000,Communication Services
-25,AT&T Inc.,T,18.24,131000000000,Communication Services
-26,Cisco Systems Inc.,CSCO,49.28,199000000000,Technology
-27,Intel Corporation,INTC,31.47,133000000000,Technology
-28,Adobe Inc.,ADBE,482.56,217000000000,Technology
-29,Salesforce Inc.,CRM,271.41,262000000000,Technology
-30,Netflix Inc.,NFLX,634.98,276000000000,Communication Services
-31,PayPal Holdings Inc.,PYPL,66.87,71000000000,Financials
-32,Advanced Micro Devices Inc.,AMD,162.24,263000000000,Technology
-33,Qualcomm Inc.,QCOM,168.19,187000000000,Technology
-34,Costco Wholesale Corporation,COST,886.85,393000000000,Consumer Staples
-35,Eli Lilly and Company,LLY,873.43,830000000000,Health Care
-36,Bristol-Myers Squibb Co.,BMY,41.62,83000000000,Health Care
-37,Amgen Inc.,AMGN,312.65,167000000000,Health Care
-38,Comcast Corporation,CMCSA,40.46,159000000000,Communication Services
-39,Walt Disney Company,DIS,114.46,208000000000,Communication Services
-40,Oracle Corporation,ORCL,125.94,347000000000,Technology
-41,McDonald's Corporation,MCD,271.04,196000000000,Consumer Discretionary
-42,Nike Inc.,NKE,93.46,141000000000,Consumer Discretionary
-43,Starbucks Corporation,SBUX,76.52,87000000000,Consumer Discretionary
-44,Boeing Company,BA,174.11,107000000000,Industrials
-45,Caterpillar Inc.,CAT,357.87,174000000000,Industrials
-46,General Electric Company,GE,164.27,180000000000,Industrials
-47,3M Company,MMM,98.74,54000000000,Industrials
-48,Honeywell International Inc.,HON,201.87,132000000000,Industrials
-49,United Parcel Service Inc.,UPS,142.18,121000000000,Industrials
-50,Lockheed Martin Corporation,LMT,462.83,111000000000,Industrials
-51,Raytheon Technologies Corporation,RTX,106.19,141000000000,Industrials
-52,American Express Company,AXP,246.21,178000000000,Financials
-53,Goldman Sachs Group Inc.,GS,471.37,151000000000,Financials
-54,Morgan Stanley,MS,95.87,156000000000,Financials
-55,Citigroup Inc.,C,63.41,121000000000,Financials
-56,Wells Fargo & Company,WFC,58.31,206000000000,Financials
-57,BlackRock Inc.,BLK,818.76,121000000000,Financials
-58,T-Mobile US Inc.,TMUS,162.74,191000000000,Communication Services
-59,Lowe's Companies Inc.,LOW,235.79,134000000000,Consumer Discretionary
-60,Target Corporation,TGT,152.48,70000000000,Consumer Discretionary
-61,CVS Health Corporation,CVS,59.84,76000000000,Health Care
-62,Thermo Fisher Scientific Inc.,TMO,584.31,225000000000,Health Care
-63,AbbVie Inc.,ABBV,161.31,285000000000,Health Care
-64,Medtronic plc,MDT,83.17,111000000000,Health Care
-65,Gilead Sciences Inc.,GILD,73.45,91000000000,Health Care
-66,Biogen Inc.,BIIB,216.42,31000000000,Health Care
-67,Regeneron Pharmaceuticals Inc.,REGN,1042.24,114000000000,Health Care
-68,Vertex Pharmaceuticals Inc.,VRTX,464.58,120000000000,Health Care
-69,Zoetis Inc.,ZTS,171.95,78000000000,Health Care
-70,Moderna Inc.,MRNA,127.74,49000000000,Health Care
-71,Illumina Inc.,ILMN,119.65,19000000000,Health Care
-72,Intuitive Surgical Inc.,ISRG,416.21,147000000000,Health Care
-73,Edwards Lifesciences Corp.,EW,88.47,53000000000,Health Care
-74,Boston Scientific Corporation,BSX,75.45,111000000000,Health Care
-75,Stryker Corporation,SYK,350.79,133000000000,Health Care
-76,Becton Dickinson and Company,BDX,236.18,68000000000,Health Care
-77,Baxter International Inc.,BAX,37.84,19000000000,Health Care
-78,Zimmer Biomet Holdings Inc.,ZBH,116.87,24000000000,Health Care
-79,Danaher Corporation,DHR,249.78,185000000000,Health Care
-80,ServiceNow Inc.,NOW,743.89,153000000000,Technology
-81,Broadcom Inc.,AVGO,1326.78,617000000000,Technology
-82,Texas Instruments Inc.,TXN,173.65,158000000000,Technology
-83,Micron Technology Inc.,MU,115.94,128000000000,Technology
-84,Applied Materials Inc.,AMAT,207.68,172000000000,Technology
-85,Lam Research Corporation,LRCX,925.12,121000000000,Technology
-86,Analog Devices Inc.,ADI,213.34,106000000000,Technology
-87,Marvell Technology Inc.,MRVL,67.84,59000000000,Technology
-88,Autodesk Inc.,ADSK,240.78,52000000000,Technology
-89,Synopsys Inc.,SNPS,560.21,85000000000,Technology
-90,Cadence Design Systems Inc.,CDNS,297.65,81000000000,Technology
-91,Intuit Inc.,INTU,628.47,176000000000,Technology
-92,Workday Inc.,WDAY,214.25,56000000000,Technology
-93,Atlassian Corporation,TEAM,173.57,45000000000,Technology
-94,Shopify Inc.,SHOP,77.45,99000000000,Technology
-95,MongoDB Inc.,MDB,264.78,19000000000,Technology
-96,Datadog Inc.,DDOG,118.45,39000000000,Technology
-97,Snowflake Inc.,SNOW,143.56,47000000000,Technology
-98,Palantir Technologies Inc.,PLTR,24.37,54000000000,Technology
-99,Airbnb Inc.,ABNB,142.51,90000000000,Consumer Discretionary
-100,Uber Technologies Inc.,UBER,68.23,141000000000,Technology
-101,Lyft Inc.,LYFT,15.67,6000000000,Technology
-102,DoorDash Inc.,DASH,125.08,51000000000,Technology
-103,Block Inc.,SQ,71.43,44000000000,Financials
-104,Coinbase Global Inc.,COIN,215.33,52000000000,Financials
-105,Zoom Video Communications Inc.,ZM,62.24,19000000000,Technology
-106,Twilio Inc.,TWLO,58.42,11000000000,Technology
-107,Robinhood Markets Inc.,HOOD,17.85,16000000000,Financials
-108,Pinterest Inc.,PINS,41.86,29000000000,Communication Services
-109,Snap Inc.,SNAP,16.72,28000000000,Communication Services
-110,Roku Inc.,ROKU,59.48,8500000000,Communication Services
-111,Spotify Technology S.A.,SPOT,313.94,61000000000,Communication Services
-112,Activision Blizzard Inc.,ATVI,94.42,74000000000,Communication Services
-113,Electronic Arts Inc.,EA,131.64,35000000000,Communication Services
-114,Take-Two Interactive Software Inc.,TTWO,154.92,26000000000,Communication Services
-115,Booking Holdings Inc.,BKNG,3745.12,131000000000,Consumer Discretionary
-116,Expedia Group Inc.,EXPE,128.65,17000000000,Consumer Discretionary
-117,Carnival Corporation,CCL,16.45,21000000000,Consumer Discretionary
-118,Royal Caribbean Cruises Ltd.,RCL,141.32,36000000000,Consumer Discretionary
-119,Marriott International Inc.,MAR,247.84,71000000000,Consumer Discretionary
-120,Hilton Worldwide Holdings Inc.,HLT,204.35,51000000000,Consumer Discretionary
-121,Chipotle Mexican Grill Inc.,CMG,64.17,53000000000,Consumer Discretionary
-122,Domino's Pizza Inc.,DPZ,523.14,18000000000,Consumer Discretionary
-123,Yum! Brands Inc.,YUM,136.42,38000000000,Consumer Discretionary
-124,General Motors Company,GM,45.74,52000000000,Consumer Discretionary
-125,Ford Motor Company,F,12.14,48000000000,Consumer Discretionary
-126,Stellantis N.V.,STLA,21.87,67000000000,Consumer Discretionary
-127,Ferrari N.V.,RACE,415.87,75000000000,Consumer Discretionary
-128,Hertz Global Holdings Inc.,HTZ,2.24,700000000,Industrials
-129,TJX Companies Inc.,TJX,104.21,118000000000,Consumer Discretionary
-130,Ross Stores Inc.,ROST,142.87,48000000000,Consumer Discretionary
-131,Best Buy Co. Inc.,BBY,87.64,19000000000,Consumer Discretionary
-132,Dollar General Corporation,DG,129.87,28000000000,Consumer Discretionary
-133,Dollar Tree Inc.,DLTR,105.74,23000000000,Consumer Discretionary
-134,Estée Lauder Companies Inc.,EL,92.46,33000000000,Consumer Staples
-135,Colgate-Palmolive Company,CL,88.64,73000000000,Consumer Staples
-136,Kimberly-Clark Corporation,KMB,132.45,45000000000,Consumer Staples
-137,Clorox Company,CLX,144.78,18000000000,Consumer Staples
-138,Monster Beverage Corporation,MNST,55.42,58000000000,Consumer Staples
-139,Constellation Brands Inc.,STZ,261.45,48000000000,Consumer Staples
-140,General Mills Inc.,GIS,68.74,39000000000,Consumer Staples
-141,Kellogg Company,K,57.87,20000000000,Consumer Staples
-142,Kraft Heinz Company,KHC,35.47,43000000000,Consumer Staples
-143,Mondelez International Inc.,MDLZ,70.42,95000000000,Consumer Staples
-144,Hershey Company,HSY,187.64,38000000000,Consumer Staples
-145,Tyson Foods Inc.,TSN,60.43,21000000000,Consumer Staples
-146,Archer-Daniels-Midland Company,ADM,57.12,30000000000,Consumer Staples
-147,ConocoPhillips,COP,116.87,136000000000,Energy
-148,EOG Resources Inc.,EOG,126.74,73000000000,Energy
-149,Occidental Petroleum Corporation,OXY,59.48,53000000000,Energy
-150,Phillips 66,PSX,142.78,60000000000,Energy
-151,Marathon Petroleum Corporation,MPC,169.84,61000000000,Energy
-152,Valero Energy Corporation,VLO,148.75,49000000000,Energy
-153,Devon Energy Corporation,DVN,45.12,29000000000,Energy
-154,Baker Hughes Company,BKR,33.47,33000000000,Energy
-155,Halliburton Company,HAL,37.85,33000000000,Energy
-156,Schlumberger Limited,SLB,46.72,67000000000,Energy
-157,AES Corporation,AES,18.74,13000000000,Utilities
-158,American Electric Power Company Inc.,AEP,85.43,45000000000,Utilities
-159,Dominion Energy Inc.,D,48.76,41000000000,Utilities
-160,Duke Energy Corporation,DUK,98.42,76000000000,Utilities
-161,Exelon Corporation,EXC,36.74,37000000000,Utilities
-162,NextEra Energy Inc.,NEE,71.84,147000000000,Utilities
-163,Southern Company,SO,72.41,79000000000,Utilities
-164,Sempra Energy,SRE,71.47,45000000000,Utilities
-165,Xcel Energy Inc.,XEL,53.42,30000000000,Utilities
-166,American Tower Corporation,AMT,194.57,91000000000,Real Estate
-167,Crown Castle Inc.,CCI,98.45,43000000000,Real Estate
-168,Equinix Inc.,EQIX,813.47,77000000000,Real Estate
-169,Prologis Inc.,PLD,125.74,117000000000,Real Estate
-170,Simon Property Group Inc.,SPG,152.48,50000000000,Real Estate
-171,Digital Realty Trust Inc.,DLR,144.87,47000000000,Real Estate
-172,Public Storage,PSA,287.65,50000000000,Real Estate
-173,Welltower Inc.,WELL,96.84,54000000000,Real Estate
-174,Trane Technologies plc,TT,328.94,74000000000,Industrials
-175,Carrier Global Corporation,CARR,58.74,49000000000,Industrials
-176,Otis Worldwide Corporation,OTIS,94.57,38000000000,Industrials
-177,Emerson Electric Co.,EMR,112.45,64000000000,Industrials
-178,Illinois Tool Works Inc.,ITW,260.87,78000000000,Industrials
-179,Deere & Company,DE,386.42,107000000000,Industrials
-180,Eaton Corporation plc,ETN,321.84,129000000000,Industrials
-181,Parker-Hannifin Corporation,PH,551.23,71000000000,Industrials
-182,CSX Corporation,CSX,35.12,68000000000,Industrials
-183,Union Pacific Corporation,UNP,243.78,148000000000,Industrials
-184,Norfolk Southern Corporation,NSC,236.45,53000000000,Industrials
-185,FedEx Corporation,FDX,264.57,65000000000,Industrials
-186,Delta Air Lines Inc.,DAL,47.85,31000000000,Industrials
-187,Southwest Airlines Co.,LUV,28.74,17000000000,Industrials
-188,United Airlines Holdings Inc.,UAL,48.64,16000000000,Industrials
-189,American Airlines Group Inc.,AAL,14.74,10000000000,Industrials
-190,Waste Management Inc.,WM,208.64,84000000000,Industrials
-191,Republic Services Inc.,RSG,189.45,59000000000,Industrials
-192,Freeport-McMoRan Inc.,FCX,48.76,70000000000,Materials
-193,Newmont Corporation,NEM,38.45,44000000000,Materials
-194,Air Products and Chemicals Inc.,APD,248.72,55000000000,Materials
-195,Dow Inc.,DOW,56.41,40000000000,Materials
-196,DuPont de Nemours Inc.,DD,78.46,33000000000,Materials
-197,Linde plc,LIN,444.87,214000000000,Materials
-198,International Paper Company,IP,41.24,14000000000,Materials
-199,Nucor Corporation,NUE,172.45,41000000000,Materials
-200,Sherwin-Williams Company,SHW,328.76,84000000000,Materials
+1,Apple Inc.,AAPL,187.54,2850000000000,Technology,28
+2,Microsoft Corporation,MSFT,426.98,3200000000000,Technology,36
+3,Alphabet Inc.,GOOGL,176.42,2200000000000,Technology,25
+4,Amazon.com Inc.,AMZN,183.72,1900000000000,Technology,64
+5,Meta Platforms Inc.,META,494.16,1250000000000,Technology,30
+6,NVIDIA Corporation,NVDA,943.55,2325000000000,Technology,72
+7,Tesla Inc.,TSLA,183.75,585000000000,Technology,52
+8,Johnson & Johnson,JNJ,148.62,358000000000,Health Care,19
+9,UnitedHealth Group Inc.,UNH,484.36,445000000000,Health Care,22
+10,Procter & Gamble Co.,PG,162.87,385000000000,Consumer Staples,26
+11,JPMorgan Chase & Co.,JPM,194.45,562000000000,Financials,12
+12,Visa Inc.,V,274.68,585000000000,Financials,30
+13,Walmart Inc.,WMT,65.24,526000000000,Consumer Staples,23
+14,Mastercard Inc.,MA,457.32,425000000000,Financials,35
+15,Exxon Mobil Corporation,XOM,114.56,452000000000,Energy,14
+16,Home Depot Inc.,HD,345.87,342000000000,Consumer Discretionary,25
+17,Bank of America Corp.,BAC,38.74,302000000000,Financials,11
+18,Chevron Corporation,CVX,152.34,282000000000,Energy,13
+19,Coca-Cola Company,KO,61.43,265000000000,Consumer Staples,24
+20,Pfizer Inc.,PFE,28.14,158000000000,Health Care,15
+21,Merck & Co. Inc.,MRK,129.42,327000000000,Health Care,21
+22,PepsiCo Inc.,PEP,172.41,236000000000,Consumer Staples,28
+23,Abbott Laboratories,ABT,109.78,190000000000,Health Care,27
+24,Verizon Communications Inc.,VZ,40.68,171000000000,Communication Services,9
+25,AT&T Inc.,T,18.24,131000000000,Communication Services,8
+26,Cisco Systems Inc.,CSCO,49.28,199000000000,Technology,15
+27,Intel Corporation,INTC,31.47,133000000000,Technology,35
+28,Adobe Inc.,ADBE,482.56,217000000000,Technology,42
+29,Salesforce Inc.,CRM,271.41,262000000000,Technology,63
+30,Netflix Inc.,NFLX,634.98,276000000000,Communication Services,44
+31,PayPal Holdings Inc.,PYPL,66.87,71000000000,Financials,18
+32,Advanced Micro Devices Inc.,AMD,162.24,263000000000,Technology,48
+33,Qualcomm Inc.,QCOM,168.19,187000000000,Technology,22
+34,Costco Wholesale Corporation,COST,886.85,393000000000,Consumer Staples,51
+35,Eli Lilly and Company,LLY,873.43,830000000000,Health Care,119
+36,Bristol-Myers Squibb Co.,BMY,41.62,83000000000,Health Care,14
+37,Amgen Inc.,AMGN,312.65,167000000000,Health Care,22
+38,Comcast Corporation,CMCSA,40.46,159000000000,Communication Services,11
+39,Walt Disney Company,DIS,114.46,208000000000,Communication Services,75
+40,Oracle Corporation,ORCL,125.94,347000000000,Technology,33
+41,McDonald's Corporation,MCD,271.04,196000000000,Consumer Discretionary,24
+42,Nike Inc.,NKE,93.46,141000000000,Consumer Discretionary,34
+43,Starbucks Corporation,SBUX,76.52,87000000000,Consumer Discretionary,21
+44,Boeing Company,BA,174.11,107000000000,Industrials,46
+45,Caterpillar Inc.,CAT,357.87,174000000000,Industrials,18
+46,General Electric Company,GE,164.27,180000000000,Industrials,50
+47,3M Company,MMM,98.74,54000000000,Industrials,18
+48,Honeywell International Inc.,HON,201.87,132000000000,Industrials,24
+49,United Parcel Service Inc.,UPS,142.18,121000000000,Industrials,16
+50,Lockheed Martin Corporation,LMT,462.83,111000000000,Industrials,19
+51,Raytheon Technologies Corporation,RTX,106.19,141000000000,Industrials,26
+52,American Express Company,AXP,246.21,178000000000,Financials,18
+53,Goldman Sachs Group Inc.,GS,471.37,151000000000,Financials,15
+54,Morgan Stanley,MS,95.87,156000000000,Financials,16
+55,Citigroup Inc.,C,63.41,121000000000,Financials,9
+56,Wells Fargo & Company,WFC,58.31,206000000000,Financials,12
+57,BlackRock Inc.,BLK,818.76,121000000000,Financials,23
+58,T-Mobile US Inc.,TMUS,162.74,191000000000,Communication Services,24
+59,Lowe's Companies Inc.,LOW,235.79,134000000000,Consumer Discretionary,28
+60,Target Corporation,TGT,152.48,70000000000,Consumer Discretionary,17
+61,CVS Health Corporation,CVS,59.84,76000000000,Health Care,9
+62,Thermo Fisher Scientific Inc.,TMO,584.31,225000000000,Health Care,35
+63,AbbVie Inc.,ABBV,161.31,285000000000,Health Care,20
+64,Medtronic plc,MDT,83.17,111000000000,Health Care,27
+65,Gilead Sciences Inc.,GILD,73.45,91000000000,Health Care,18
+66,Biogen Inc.,BIIB,216.42,31000000000,Health Care,15
+67,Regeneron Pharmaceuticals Inc.,REGN,1042.24,114000000000,Health Care,31
+68,Vertex Pharmaceuticals Inc.,VRTX,464.58,120000000000,Health Care,28
+69,Zoetis Inc.,ZTS,171.95,78000000000,Health Care,34
+70,Moderna Inc.,MRNA,127.74,49000000000,Health Care,42
+71,Illumina Inc.,ILMN,119.65,19000000000,Health Care,65
+72,Intuitive Surgical Inc.,ISRG,416.21,147000000000,Health Care,74
+73,Edwards Lifesciences Corp.,EW,88.47,53000000000,Health Care,38
+74,Boston Scientific Corporation,BSX,75.45,111000000000,Health Care,29
+75,Stryker Corporation,SYK,350.79,133000000000,Health Care,40
+76,Becton Dickinson and Company,BDX,236.18,68000000000,Health Care,21
+77,Baxter International Inc.,BAX,37.84,19000000000,Health Care,8
+78,Zimmer Biomet Holdings Inc.,ZBH,116.87,24000000000,Health Care,26
+79,Danaher Corporation,DHR,249.78,185000000000,Health Care,38
+80,ServiceNow Inc.,NOW,743.89,153000000000,Technology,82
+81,Broadcom Inc.,AVGO,1326.78,617000000000,Technology,47
+82,Texas Instruments Inc.,TXN,173.65,158000000000,Technology,25
+83,Micron Technology Inc.,MU,115.94,128000000000,Technology,43
+84,Applied Materials Inc.,AMAT,207.68,172000000000,Technology,24
+85,Lam Research Corporation,LRCX,925.12,121000000000,Technology,35
+86,Analog Devices Inc.,ADI,213.34,106000000000,Technology,41
+87,Marvell Technology Inc.,MRVL,67.84,59000000000,Technology,52
+88,Autodesk Inc.,ADSK,240.78,52000000000,Technology,54
+89,Synopsys Inc.,SNPS,560.21,85000000000,Technology,61
+90,Cadence Design Systems Inc.,CDNS,297.65,81000000000,Technology,77
+91,Intuit Inc.,INTU,628.47,176000000000,Technology,56
+92,Workday Inc.,WDAY,214.25,56000000000,Technology,51
+93,Atlassian Corporation,TEAM,173.57,45000000000,Technology,195
+94,Shopify Inc.,SHOP,77.45,99000000000,Technology,73
+95,MongoDB Inc.,MDB,264.78,19000000000,Technology,14
+96,Datadog Inc.,DDOG,118.45,39000000000,Technology,98
+97,Snowflake Inc.,SNOW,143.56,47000000000,Technology,5
+98,Palantir Technologies Inc.,PLTR,24.37,54000000000,Technology,217
+99,Airbnb Inc.,ABNB,142.51,90000000000,Consumer Discretionary,39
+100,Uber Technologies Inc.,UBER,68.23,141000000000,Technology,112
+101,Lyft Inc.,LYFT,15.67,6000000000,Technology,37
+102,DoorDash Inc.,DASH,125.08,51000000000,Technology,26
+103,Block Inc.,SQ,71.43,44000000000,Financials,42
+104,Coinbase Global Inc.,COIN,215.33,52000000000,Financials,48
+105,Zoom Video Communications Inc.,ZM,62.24,19000000000,Technology,23
+106,Twilio Inc.,TWLO,58.42,11000000000,Technology,199
+107,Robinhood Markets Inc.,HOOD,17.85,16000000000,Financials,24
+108,Pinterest Inc.,PINS,41.86,29000000000,Communication Services,36
+109,Snap Inc.,SNAP,16.72,28000000000,Communication Services,34
+110,Roku Inc.,ROKU,59.48,8500000000,Communication Services,32
+111,Spotify Technology S.A.,SPOT,313.94,61000000000,Communication Services,49
+112,Activision Blizzard Inc.,ATVI,94.42,74000000000,Communication Services,38
+113,Electronic Arts Inc.,EA,131.64,35000000000,Communication Services,36
+114,Take-Two Interactive Software Inc.,TTWO,154.92,26000000000,Communication Services,66
+115,Booking Holdings Inc.,BKNG,3745.12,131000000000,Consumer Discretionary,30
+116,Expedia Group Inc.,EXPE,128.65,17000000000,Consumer Discretionary,27
+117,Carnival Corporation,CCL,16.45,21000000000,Consumer Discretionary,68
+118,Royal Caribbean Cruises Ltd.,RCL,141.32,36000000000,Consumer Discretionary,19
+119,Marriott International Inc.,MAR,247.84,71000000000,Consumer Discretionary,30
+120,Hilton Worldwide Holdings Inc.,HLT,204.35,51000000000,Consumer Discretionary,43
+121,Chipotle Mexican Grill Inc.,CMG,64.17,53000000000,Consumer Discretionary,59
+122,Domino's Pizza Inc.,DPZ,523.14,18000000000,Consumer Discretionary,33
+123,Yum! Brands Inc.,YUM,136.42,38000000000,Consumer Discretionary,25
+124,General Motors Company,GM,45.74,52000000000,Consumer Discretionary,6
+125,Ford Motor Company,F,12.14,48000000000,Consumer Discretionary,8
+126,Stellantis N.V.,STLA,21.87,67000000000,Consumer Discretionary,4
+127,Ferrari N.V.,RACE,415.87,75000000000,Consumer Discretionary,52
+128,Hertz Global Holdings Inc.,HTZ,2.24,700000000,Industrials,66
+129,TJX Companies Inc.,TJX,104.21,118000000000,Consumer Discretionary,26
+130,Ross Stores Inc.,ROST,142.87,48000000000,Consumer Discretionary,29
+131,Best Buy Co. Inc.,BBY,87.64,19000000000,Consumer Discretionary,14
+132,Dollar General Corporation,DG,129.87,28000000000,Consumer Discretionary,19
+133,Dollar Tree Inc.,DLTR,105.74,23000000000,Consumer Discretionary,26
+134,Estée Lauder Companies Inc.,EL,92.46,33000000000,Consumer Staples,98
+135,Colgate-Palmolive Company,CL,88.64,73000000000,Consumer Staples,29
+136,Kimberly-Clark Corporation,KMB,132.45,45000000000,Consumer Staples,24
+137,Clorox Company,CLX,144.78,18000000000,Consumer Staples,44
+138,Monster Beverage Corporation,MNST,55.42,58000000000,Consumer Staples,38
+139,Constellation Brands Inc.,STZ,261.45,48000000000,Consumer Staples,28
+140,General Mills Inc.,GIS,68.74,39000000000,Consumer Staples,16
+141,Kellogg Company,K,57.87,20000000000,Consumer Staples,22
+142,Kraft Heinz Company,KHC,35.47,43000000000,Consumer Staples,15
+143,Mondelez International Inc.,MDLZ,70.42,95000000000,Consumer Staples,22
+144,Hershey Company,HSY,187.64,38000000000,Consumer Staples,24
+145,Tyson Foods Inc.,TSN,60.43,21000000000,Consumer Staples,14
+146,Archer-Daniels-Midland Company,ADM,57.12,30000000000,Consumer Staples,12
+147,ConocoPhillips,COP,116.87,136000000000,Energy,13
+148,EOG Resources Inc.,EOG,126.74,73000000000,Energy,10
+149,Occidental Petroleum Corporation,OXY,59.48,53000000000,Energy,13
+150,Phillips 66,PSX,142.78,60000000000,Energy,11
+151,Marathon Petroleum Corporation,MPC,169.84,61000000000,Energy,8
+152,Valero Energy Corporation,VLO,148.75,49000000000,Energy,7
+153,Devon Energy Corporation,DVN,45.12,29000000000,Energy,9
+154,Baker Hughes Company,BKR,33.47,33000000000,Energy,15
+155,Halliburton Company,HAL,37.85,33000000000,Energy,13
+156,Schlumberger Limited,SLB,46.72,67000000000,Energy,18
+157,AES Corporation,AES,18.74,13000000000,Utilities,16
+158,American Electric Power Company Inc.,AEP,85.43,45000000000,Utilities,18
+159,Dominion Energy Inc.,D,48.76,41000000000,Utilities,19
+160,Duke Energy Corporation,DUK,98.42,76000000000,Utilities,19
+161,Exelon Corporation,EXC,36.74,37000000000,Utilities,16
+162,NextEra Energy Inc.,NEE,71.84,147000000000,Utilities,19
+163,Southern Company,SO,72.41,79000000000,Utilities,21
+164,Sempra Energy,SRE,71.47,45000000000,Utilities,17
+165,Xcel Energy Inc.,XEL,53.42,30000000000,Utilities,19
+166,American Tower Corporation,AMT,194.57,91000000000,Real Estate,36
+167,Crown Castle Inc.,CCI,98.45,43000000000,Real Estate,31
+168,Equinix Inc.,EQIX,813.47,77000000000,Real Estate,84
+169,Prologis Inc.,PLD,125.74,117000000000,Real Estate,38
+170,Simon Property Group Inc.,SPG,152.48,50000000000,Real Estate,19
+171,Digital Realty Trust Inc.,DLR,144.87,47000000000,Real Estate,43
+172,Public Storage,PSA,287.65,50000000000,Real Estate,26
+173,Welltower Inc.,WELL,96.84,54000000000,Real Estate,90
+174,Trane Technologies plc,TT,328.94,74000000000,Industrials,28
+175,Carrier Global Corporation,CARR,58.74,49000000000,Industrials,21
+176,Otis Worldwide Corporation,OTIS,94.57,38000000000,Industrials,28
+177,Emerson Electric Co.,EMR,112.45,64000000000,Industrials,25
+178,Illinois Tool Works Inc.,ITW,260.87,78000000000,Industrials,26
+179,Deere & Company,DE,386.42,107000000000,Industrials,12
+180,Eaton Corporation plc,ETN,321.84,129000000000,Industrials,32
+181,Parker-Hannifin Corporation,PH,551.23,71000000000,Industrials,25
+182,CSX Corporation,CSX,35.12,68000000000,Industrials,19
+183,Union Pacific Corporation,UNP,243.78,148000000000,Industrials,23
+184,Norfolk Southern Corporation,NSC,236.45,53000000000,Industrials,27
+185,FedEx Corporation,FDX,264.57,65000000000,Industrials,16
+186,Delta Air Lines Inc.,DAL,47.85,31000000000,Industrials,7
+187,Southwest Airlines Co.,LUV,28.74,17000000000,Industrials,40
+188,United Airlines Holdings Inc.,UAL,48.64,16000000000,Industrials,6
+189,American Airlines Group Inc.,AAL,14.74,10000000000,Industrials,19
+190,Waste Management Inc.,WM,208.64,84000000000,Industrials,34
+191,Republic Services Inc.,RSG,189.45,59000000000,Industrials,31
+192,Freeport-McMoRan Inc.,FCX,48.76,70000000000,Materials,22
+193,Newmont Corporation,NEM,38.45,44000000000,Materials,22
+194,Air Products and Chemicals Inc.,APD,248.72,55000000000,Materials,26
+195,Dow Inc.,DOW,56.41,40000000000,Materials,13
+196,DuPont de Nemours Inc.,DD,78.46,33000000000,Materials,75
+197,Linde plc,LIN,444.87,214000000000,Materials,32
+198,International Paper Company,IP,41.24,14000000000,Materials,22
+199,Nucor Corporation,NUE,172.45,41000000000,Materials,9
+200,Sherwin-Williams Company,SHW,328.76,84000000000,Materials,35
