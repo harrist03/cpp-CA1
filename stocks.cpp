@@ -161,10 +161,6 @@ void displayBasedOnUserChoice(vector<Stocks> &stocksList, string choice)
     {
         cout << "No stocks found in the " << choice << " sector." << endl;
     }
-    else
-    {
-        cout << string(120, '-') << endl;
-    }
 }
 
 int StocksAveragePERatio(vector<Stocks> &stocksList, Stocks &highest, Stocks &lowest)
@@ -188,6 +184,30 @@ int StocksAveragePERatio(vector<Stocks> &stocksList, Stocks &highest, Stocks &lo
     int avgPERatio = totalPERatio / stocksList.size();
 
     return avgPERatio;
+}
+
+vector<Stocks> displayStocksBasedOnInput(vector<Stocks> &stocksList, string userInput)
+{
+    vector<Stocks> stocksBasedOnInput;
+    bool found = false;
+    string upperInput = toUpper(userInput);
+    for (vector<Stocks>::iterator it = stocksList.begin(); it != stocksList.end(); it++)
+    {
+        // create upper case version of stock name
+        string upperStockName = toUpper(it->stockName);
+        // string::npos is returned if the string is not found
+        if (upperStockName.find(upperInput) != string::npos)
+        {
+            stocksBasedOnInput.push_back(*it);
+            found = true;
+        }
+    }
+
+    if (!found)
+    {
+        cout << "No stocks found containing " << userInput << endl;
+    }
+    return stocksBasedOnInput;
 }
 
 void stocks()
@@ -238,4 +258,11 @@ void stocks()
     // cout << string(120, '-') << endl;
 
     // cout << "\nAverage PE Ratio: " << avgPERatio << endl;
+
+    // stage 3 q6
+    string userInput;
+    cout << "Enter a word a stock contains to display: " << endl;
+    getline(cin, userInput);
+    vector<Stocks> stocksBasedOnInput = displayStocksBasedOnInput(stocksList, userInput);
+    displayStocks(stocksBasedOnInput);
 }
