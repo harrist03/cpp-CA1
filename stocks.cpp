@@ -210,6 +210,19 @@ vector<Stocks> displayStocksBasedOnInput(vector<Stocks> &stocksList, string user
     return stocksBasedOnInput;
 }
 
+void displayDescendingStockPrice(vector<Stocks> &stocksList)
+{
+    // sort the stocksList in descending order of stock price
+    sort(stocksList.begin(), stocksList.end(), [](Stocks &a, Stocks &b) {
+        return a.stockPrice > b.stockPrice;
+    });
+    displayHeader();
+    for (Stocks &stock : stocksList)
+    {
+        displayStock(stock);
+    }
+}
+
 void stocks()
 {
     vector<Stocks> stocksList;
@@ -260,9 +273,12 @@ void stocks()
     // cout << "\nAverage PE Ratio: " << avgPERatio << endl;
 
     // stage 3 q6
-    string userInput;
-    cout << "Enter a word a stock contains to display: " << endl;
-    getline(cin, userInput);
-    vector<Stocks> stocksBasedOnInput = displayStocksBasedOnInput(stocksList, userInput);
-    displayStocks(stocksBasedOnInput);
+    // string userInput;
+    // cout << "Enter a word a stock contains to display: " << endl;
+    // getline(cin, userInput);
+    // vector<Stocks> stocksBasedOnInput = displayStocksBasedOnInput(stocksList, userInput);
+    // displayStocks(stocksBasedOnInput);
+
+    // stage 3 q7
+    displayDescendingStockPrice(stocksList);
 }
