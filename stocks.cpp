@@ -166,6 +166,19 @@ map<string, int> findCountBySector(vector<Stocks> &stocksList)
     return sectorCount;
 }
 
+// stage 3 q3
+void displaySectorCount(map<string, int> sectorCount)
+{
+    cout << string(30, '-') << endl
+         << "Stock sector count" << endl;
+    cout << string(30, '-') << endl;
+    for (auto &sector : sectorCount)
+    {
+        cout << sector.first << ": " << sector.second << endl;
+    }
+    cout << string(30, '-') << endl;
+}
+
 // stage 3 q4
 void displayBasedOnUserChoice(vector<Stocks> &stocksList, string choice)
 {
@@ -186,6 +199,7 @@ void displayBasedOnUserChoice(vector<Stocks> &stocksList, string choice)
     cout << string(120, '-') << endl;
 }
 
+// stage 3 q5
 int StocksAveragePERatio(vector<Stocks> &stocksList, Stocks &highest, Stocks &lowest)
 {
     highest = stocksList[0];
@@ -207,6 +221,24 @@ int StocksAveragePERatio(vector<Stocks> &stocksList, Stocks &highest, Stocks &lo
     int avgPERatio = totalPERatio / stocksList.size();
 
     return avgPERatio;
+}
+
+// stage 3 q5
+void displayLowestHighestAveragePE(Stocks &lowest, Stocks &highest, int average)
+{
+    cout << "Highest PE Ratio Stock" << endl;
+    displayHeader();
+    displayStock(highest);
+    cout << string(120, '-') << endl;
+
+    cout << "\nLowest PE Ratio Stock" << endl;
+    displayHeader();
+    displayStock(lowest);
+    cout << string(120, '-') << endl;
+
+    cout << string(20, '-');
+    cout << "\nAverage PE Ratio \n" << average << endl;
+    cout << string(20, '-');
 }
 
 vector<Stocks> displayStocksBasedOnInput(vector<Stocks> &stocksList, string userInput)
@@ -286,11 +318,7 @@ void stocks()
         else if (choice == 3)
         {
             map<string, int> sectorCount = findCountBySector(stocksList);
-            cout << "Stock sector count" << endl;
-            for (auto &sector : sectorCount)
-            {
-                cout << sector.first << ": " << sector.second << endl;
-            }
+            displaySectorCount(sectorCount);
         }
         else if (choice == 4)
         {
@@ -303,18 +331,7 @@ void stocks()
         {
             Stocks highestPE, lowestPE;
             int avgPERatio = StocksAveragePERatio(stocksList, highestPE, lowestPE);
-
-            cout << "Highest PE Ratio Stock" << endl;
-            displayHeader();
-            displayStock(highestPE);
-            cout << string(120, '-') << endl;
-
-            cout << "\nLowest PE Ratio Stock" << endl;
-            displayHeader();
-            displayStock(lowestPE);
-            cout << string(120, '-') << endl;
-
-            cout << "\nAverage PE Ratio: " << avgPERatio << endl;
+            displayLowestHighestAveragePE(lowestPE, highestPE, avgPERatio);
         }
         else if (choice == 6)
         {
