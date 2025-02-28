@@ -6,10 +6,12 @@
 #include <algorithm>
 
 // Referenced by https://stackoverflow.com/questions/313970/how-to-convert-stdstring-to-lower-case
-string toUpper(const string &str) {
+string toUpper(const string &str)
+{
     string result = str;
-    transform(result.begin(), result.end(), result.begin(), 
-              [](unsigned char c){ return toupper(c); });
+    transform(result.begin(), result.end(), result.begin(),
+              [](unsigned char c)
+              { return toupper(c); });
     return result;
 }
 
@@ -77,7 +79,7 @@ void displayHeader()
          << setw(5) << "ID"
          << setw(40) << "Name"
          << setw(8) << "Symbol"
-        //  << right
+         //  << right
          << setw(12) << "Price"
          << setw(15) << "MarketCap($B)"
          << left
@@ -101,7 +103,7 @@ void displayStock(Stocks &stock)
          << setw(5) << stock.stockID
          << setw(40) << stock.stockName
          << setw(8) << stock.stockSymbol
-        //  << right
+         //  << right
          << setw(12) << priceStr.str()
          << setw(15) << marketCapStr.str()
          << left
@@ -133,6 +135,26 @@ int findStocksByName(vector<Stocks> &stocksList, string stockName)
     return -1;
 }
 
+// stage 3 q2
+void displayStockBasedOnID(vector<Stocks> &stocksList, int stockID)
+{
+    bool found = false;
+    for (Stocks &stock : stocksList)
+    {
+        if (stock.stockID == stockID)
+        {
+            displayHeader();
+            displayStock(stock);
+            cout << string(120, '-');
+            found = true;
+        }
+    }
+    if (!found)
+    {
+        cout << "Stock not found!" << endl;
+    }
+}
+
 // stage 3 q3
 map<string, int> findCountBySector(vector<Stocks> &stocksList)
 {
@@ -161,6 +183,7 @@ void displayBasedOnUserChoice(vector<Stocks> &stocksList, string choice)
     {
         cout << "No stocks found in the " << choice << " sector." << endl;
     }
+    cout << string(120, '-') << endl;
 }
 
 int StocksAveragePERatio(vector<Stocks> &stocksList, Stocks &highest, Stocks &lowest)
@@ -213,72 +236,105 @@ vector<Stocks> displayStocksBasedOnInput(vector<Stocks> &stocksList, string user
 void displayDescendingStockPrice(vector<Stocks> &stocksList)
 {
     // sort the stocksList in descending order of stock price
-    sort(stocksList.begin(), stocksList.end(), [](Stocks &a, Stocks &b) {
-        return a.stockPrice > b.stockPrice;
-    });
+    sort(stocksList.begin(), stocksList.end(), [](Stocks &a, Stocks &b)
+         { return a.stockPrice > b.stockPrice; });
     displayHeader();
     for (Stocks &stock : stocksList)
     {
         displayStock(stock);
     }
+    cout << string(120, '-') << endl;
 }
 
 void stocks()
 {
     vector<Stocks> stocksList;
     populateStocks(stocksList);
-    // stage 3 q1
-    // displayStocks(stocksList);
 
-    // stage 3 q2
-    // int result = findStocksByName(stocks, "Apple Inc.");
-    // if (result != -1)
-    // {
-    //     cout << "Stock ID: " << result << endl;
-    // }
-    // else
-    // {
-    //     cout << "Stock not found" << endl;
-    // }
+    int choice;
+    do
+    {
+        cout << endl
+             << string(60, '-') << endl;
+        cout << "Stocks Menu" << endl;
+        cout << string(60, '-') << endl;
+        cout << "1. Display all stocks" << endl;
+        cout << "2. Find stock by name" << endl;
+        cout << "3. Count stocks by sector" << endl;
+        cout << "4. Display stocks by sector" << endl;
+        cout << "5. Display highest, lowest PE ratio and average PE ratio" << endl;
+        cout << "6. Display stocks based on input" << endl;
+        cout << "7. Display stocks in descending order of price" << endl;
+        cout << "8. Exit" << endl;
+        cout << string(60, '-') << endl;
+        cout << "Enter choice: ";
+        cin >> choice;
+        cin.ignore();
+        cout << endl;
+        if (choice == 1)
+        {
+            displayStocks(stocksList);
+        }
+        else if (choice == 2)
+        {
+            string stockName;
+            cout << "Enter stock name: ";
+            getline(cin, stockName);
+            int result = findStocksByName(stocksList, stockName);
+            displayStockBasedOnID(stocksList, result);
+        }
+        else if (choice == 3)
+        {
+            map<string, int> sectorCount = findCountBySector(stocksList);
+            cout << "Stock sector count" << endl;
+            for (auto &sector : sectorCount)
+            {
+                cout << sector.first << ": " << sector.second << endl;
+            }
+        }
+        else if (choice == 4)
+        {
+            string sectorChoice;
+            cout << "Enter stock sector to display: " << endl;
+            getline(cin, sectorChoice);
+            displayBasedOnUserChoice(stocksList, sectorChoice);
+        }
+        else if (choice == 5)
+        {
+            Stocks highestPE, lowestPE;
+            int avgPERatio = StocksAveragePERatio(stocksList, highestPE, lowestPE);
 
-    // stage 3 q3
-    // map<string, int> sectorCount = findCountBySector(stocksList);
-    // cout << "Stock sector count:" << endl;
-    // // auto is used to automatically determine the type of the variable
-    // for (auto &sector : sectorCount)
-    // {
-    //     cout << sector.first << ": " << sector.second << endl;
-    // }
-     
-    // stage 3 q4
-    // string sectorChoice;
-    // cout << "Enter stock sector to display: " << endl;
-    // getline(cin, sectorChoice);
-    // displayBasedOnUserChoice(stocksList, sectorChoice);
+            cout << "Highest PE Ratio Stock" << endl;
+            displayHeader();
+            displayStock(highestPE);
+            cout << string(120, '-') << endl;
 
-    // stage 3 q5
-    // Stocks highestPE, lowestPE;
-    // int avgPERatio = StocksAveragePERatio(stocksList, highestPE, lowestPE);
+            cout << "\nLowest PE Ratio Stock" << endl;
+            displayHeader();
+            displayStock(lowestPE);
+            cout << string(120, '-') << endl;
 
-    // cout << "Highest PE Ratio Stock" << endl;
-    // displayHeader();
-    // displayStock(highestPE);
-    // cout << string(120, '-') << endl;
-
-    // cout << "\nLowest PE Ratio Stock" << endl;
-    // displayHeader();
-    // displayStock(lowestPE);
-    // cout << string(120, '-') << endl;
-
-    // cout << "\nAverage PE Ratio: " << avgPERatio << endl;
-
-    // stage 3 q6
-    // string userInput;
-    // cout << "Enter a word a stock contains to display: " << endl;
-    // getline(cin, userInput);
-    // vector<Stocks> stocksBasedOnInput = displayStocksBasedOnInput(stocksList, userInput);
-    // displayStocks(stocksBasedOnInput);
-
-    // stage 3 q7
-    displayDescendingStockPrice(stocksList);
+            cout << "\nAverage PE Ratio: " << avgPERatio << endl;
+        }
+        else if (choice == 6)
+        {
+            string userInput;
+            cout << "Enter a word a stock contains to display: " << endl;
+            getline(cin, userInput);
+            vector<Stocks> stocksBasedOnInput = displayStocksBasedOnInput(stocksList, userInput);
+            displayStocks(stocksBasedOnInput);
+        }
+        else if (choice == 7)
+        {
+            displayDescendingStockPrice(stocksList);
+        }
+        else if (choice == 8)
+        {
+            cout << "GoodBye!" << endl;
+        }
+        else
+        {
+            cout << "Invalid choice! Try again!" << endl;
+        }
+    } while (choice != 8);
 }
